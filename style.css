@@ -18,17 +18,13 @@ body {
     border-radius: 50%;
 }
 
-/*#roulette::before {
-    content: " ";
-    display: block;
+#arrow {
     width: 5%;
     height: 5%;
     margin: 0 auto;
-    position: relative;
-    bottom: 1%;
     background-color: #333333;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
-}*/
+}
 
 #toolbar {
     width: 100%;
