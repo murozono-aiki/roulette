@@ -45,7 +45,7 @@ function rotateStep(timestamp) {
     while (currentRotate >= 2 * pi) {
         currentRotate -= 2 * pi;
     }
-    rouletteElement.style.transform = "rotate(${currentRotate}rad)";
+    rouletteElement.style.transform = `rotate(${currentRotate}rad)`;
 
     for (let i = 1; i <= maxNumber; i++) {
         if (2 * pi - currentRotate < 2 * pi * (i / maxNumber)) {
