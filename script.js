@@ -8,7 +8,7 @@ const pi = Math.PI;
 const initialSpeedRange = Math.sqrt(-2 * acceleration * 2 * pi);
 
 const rouletteElement = document.getElementById("roulette");
-const arrowElement = document.getElementById("arrow");
+//const arrowElement = document.getElementById("arrow");
 const startButton = document.getElementById("start");
 
 let initialRotate = 0;
@@ -28,7 +28,7 @@ let previousTimeStamp = 0;
     }
     rouletteElement.style.background = "conic-gradient(" + conicGradient + ")";
 }
-arrowElement.style.transform = "translateY(50%)";
+//arrowElement.style.transform = "translateY(50%)";
 
 function rotateStep(timestamp) {
     if (start === undefined) {
