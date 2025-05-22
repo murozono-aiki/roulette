@@ -8,6 +8,7 @@ const pi = Math.PI;
 const initialSpeedRange = Math.sqrt(-2 * acceleration * 2 * pi);
 
 const rouletteElement = document.getElementById("roulette");
+const arrowElement = document.getElementById("arrow");
 const startButton = document.getElementById("start");
 
 let initialRotate = 0;
@@ -27,6 +28,7 @@ let previousTimeStamp = 0;
     }
     rouletteElement.style.background = "conic-gradient(" + conicGradient + ")";
 }
+arrowElement.style.transform = "translateY(50%)";
 
 function rotateStep(timestamp) {
     if (start === undefined) {
@@ -43,7 +45,7 @@ function rotateStep(timestamp) {
     while (currentRotate >= 2 * pi) {
         currentRotate -= 2 * pi;
     }
-    rouletteElement.style.transform = `rotate(${currentRotate}rad)`;
+    rouletteElement.style.transform = "rotate(${currentRotate}rad)";
 
     for (let i = 1; i <= maxNumber; i++) {
         if (2 * pi - currentRotate < 2 * pi * (i / maxNumber)) {
